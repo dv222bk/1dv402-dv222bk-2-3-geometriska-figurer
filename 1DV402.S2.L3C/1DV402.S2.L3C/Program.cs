@@ -133,7 +133,23 @@ namespace _1DV402.S2.L3C
             Console.WriteLine();
         }
         private static void ViewShapes(Shape[] shapes){
-
+            if (shapes[0].IsShape3D)
+            {
+                Console.WriteLine(Properties.Strings.BoxLine3D);
+                Console.WriteLine(Properties.Strings.Header3D);
+                Console.WriteLine(Properties.Strings.BoxLine3D);
+            }
+            else
+            {
+                Console.WriteLine(Properties.Strings.BoxLine2D);
+                Console.WriteLine(Properties.Strings.Header2D);
+                Console.WriteLine(Properties.Strings.BoxLine2D);
+            }
+            foreach (Shape shape in shapes)
+            {
+                Console.WriteLine(shape.ToString("R"));
+            }
+            Console.WriteLine();
         }
         private static void ViewErrorMsg(string message, ConsoleColor backgroundColor = ConsoleColor.Red, ConsoleColor foregroundColor = ConsoleColor.White)
         {

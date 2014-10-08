@@ -13,7 +13,8 @@ namespace _1DV402.S2.L3C
         {
             get
             {
-                if(ShapeType == ShapeType.Cylinder || ShapeType == ShapeType.Sphere || ShapeType == ShapeType.Cubiod) {
+                if (ShapeType == ShapeType.Cylinder || ShapeType == ShapeType.Sphere || ShapeType == ShapeType.Cubiod)
+                {
                     return true;
                 }
                 return false;
