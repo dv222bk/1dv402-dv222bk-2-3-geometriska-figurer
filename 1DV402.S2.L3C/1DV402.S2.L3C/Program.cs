@@ -40,11 +40,47 @@ namespace _1DV402.S2.L3C
         }
         private static Shape2D[] Randomize2DShapes()
         {
-
+            Random random = new Random();
+            int numShapes = random.Next(5, 21);
+            Shape2D[] shapes = new Shape2D[numShapes];
+            for (int i = 0; i < numShapes; i++)
+            {
+                switch (random.Next(0, 3))
+                {
+                    case 0:
+                        shapes[i] = new Ellipse(Extensions.NextDouble(random, 5.0, 100.0), Extensions.NextDouble(random, 5.0, 100.0));
+                        break;
+                    case 1:
+                        shapes[i] = new Ellipse(Extensions.NextDouble(random, 5.0, 100.0));
+                        break;
+                    case 2:
+                        shapes[i] = new Rectangle(Extensions.NextDouble(random, 5.0, 100.0), Extensions.NextDouble(random, 5.0, 100.0));
+                        break;
+                }
+            }
+            return shapes;
         }
         private static Shape3D[] Randomize3DShapes()
         {
-
+            Random random = new Random();
+            int numShapes = random.Next(5, 21);
+            Shape3D[] shapes = new Shape3D[numShapes];
+            for (int i = 0; i < numShapes; i++)
+            {
+                switch (random.Next(0, 3))
+                {
+                    case 0:
+                        shapes[i] = new Cuboid(Extensions.NextDouble(random, 5.0, 100.0), Extensions.NextDouble(random, 5.0, 100.0), Extensions.NextDouble(random, 5.0, 100.0));
+                        break;
+                    case 1:
+                        shapes[i] = new Cylinder(Extensions.NextDouble(random, 5.0, 100.0), Extensions.NextDouble(random, 5.0, 100.0), Extensions.NextDouble(random, 5.0, 100.0));
+                        break;
+                    case 2:
+                        shapes[i] = new Sphere(Extensions.NextDouble(random, 5.0, 100.0));
+                        break;
+                }
+            }
+            return shapes;
         }
         private static double[] ReadDimensions(ShapeType shapeType)
         {

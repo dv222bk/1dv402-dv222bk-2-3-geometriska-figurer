@@ -214,7 +214,7 @@ namespace _1DV402.S2.L3C.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to  3. Ellips..
+        ///   Looks up a localized string similar to  3. Ellipse..
         /// </summary>
         internal static string Menu3 {
             get {

@@ -24,5 +24,9 @@ namespace _1DV402.S2.L3C
             s.Remove(s.Length - 1, 1);
             return "=" + s + "=";
         }
+        public static double NextDouble(this Random random, double minValue, double maxValue) //http://stackoverflow.com/questions/1064901/random-number-between-2-double-numbers
+        {
+            return random.NextDouble() * (maxValue - minValue) + minValue;
+        }
     }
 }
