@@ -8,16 +8,35 @@ namespace _1DV402.S2.L3C
 {
     class Program
     {
+        private Shape CreateShape(ShapeType shapeType)
+        {
+            string type = Extensions.AsText(shapeType);
+            Console.BackgroundColor = ConsoleColor.DarkRed;
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine(Properties.Strings.BoxLine);
+            Console.WriteLine(Extensions.CenterAlignString(type, Properties.Strings.BoxLine));
+            Console.WriteLine(Properties.Strings.BoxLine);
+            Console.ResetColor();
+            double[] Dimensions = ReadDimensions(shapeType);
+            switch (type)
+            {
+                case "Cuboid":
+                    return new Cuboid(Dimensions[0], Dimensions[1], Dimensions[2]);
+                case "Cylinder":
+                    return new Cylinder(Dimensions[0], Dimensions[1], Dimensions[2]);
+                case "Ellipse":
+                    return new Ellipse(Dimensions[0], Dimensions[1]);
+                case "Rectangle":
+                    return new Rectangle(Dimensions[0], Dimensions[1]);
+                case "Sphere":
+                    return new Sphere(Dimensions[0]);
+                default:
+                    return new Ellipse(Dimensions[0]);
+            }
+        }
         static void Main(string[] args)
         {
             
-        }
-
-        private Shape CreateShape(ShapeType shapeType)
-        {
-            Console.WriteLine(Properties.Strings.BoxLine);
-            Console.WriteLine(Extensions.CenterAlignString(Extensions.AsText(shapeType), Properties.Strings.BoxLine));
-            Console.WriteLine(Properties.Strings.BoxLine);
         }
         private static double[] ReadDimensions(ShapeType shapeType)
         {
@@ -33,10 +52,9 @@ namespace _1DV402.S2.L3C
                     return ReadDoublesGreaterThanZero(Properties.Strings.RectanglePrompt, 2);
                 case "Sphere":
                     return ReadDoublesGreaterThanZero(Properties.Strings.SpherePrompt);
-                case "Circle":
+                default:
                     return ReadDoublesGreaterThanZero(Properties.Strings.CirclePrompt);
             }
-            throw new ArgumentException(); //If ShapeType has an impossible value
         }
         private static double[] ReadDoublesGreaterThanZero(string prompt, int numberOfValues = 1)
         {
