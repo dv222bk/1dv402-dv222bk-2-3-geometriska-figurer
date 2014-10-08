@@ -132,11 +132,17 @@
   <data name="BoxLine3D" xml:space="preserve">
     <value>-------------------------------------------------------------------</value>
   </data>
+  <data name="ChooseMenu" xml:space="preserve">
+    <value> Ange menyval [0-8]: </value>
+  </data>
   <data name="CirclePrompt" xml:space="preserve">
     <value>Ange figurens diameter:</value>
   </data>
   <data name="Console_Title" xml:space="preserve">
     <value>Geometriska figurer - nivå C</value>
+  </data>
+  <data name="Continue_Prompt" xml:space="preserve">
+    <value>Tryck tangent för att fortsätta</value>
   </data>
   <data name="CuboidPrompt" xml:space="preserve">
     <value>Ange figurens längd, bredd och höjd:</value>
@@ -145,7 +151,7 @@
     <value>Ange figurens horisontella radie, vertikala radie och höjd:</value>
   </data>
   <data name="DimensionsError" xml:space="preserve">
-    <value>FEL! Ett fel inträffade då figurens dimensioner tolkades.</value>
+    <value> FEL! Ett fel inträffade då figurens dimensioner tolkades.</value>
   </data>
   <data name="EllipsePrompt" xml:space="preserve">
     <value>Ange figurens horisontella radie och vertikala radie:</value>
@@ -197,6 +203,15 @@
   </data>
   <data name="Menu8" xml:space="preserve">
     <value> 8. Slumpa 3D-figurer.</value>
+  </data>
+  <data name="MenuFormatError" xml:space="preserve">
+    <value> FEL! Du måste ange ett nummer.</value>
+  </data>
+  <data name="MenuNumberError" xml:space="preserve">
+    <value> FEL! Ange ett nummer mellan 0 och 8.</value>
+  </data>
+  <data name="OverFlowError" xml:space="preserve">
+    <value> FEL! På något sätt så blev ditt värde för stort eller för litet någonstans. Prova igen.</value>
   </data>
   <data name="Perimeter2D" xml:space="preserve">
     <value>Area   :{0, 8}\n</value>

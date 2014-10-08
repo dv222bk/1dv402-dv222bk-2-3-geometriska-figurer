@@ -106,6 +106,15 @@ namespace _1DV402.S2.L3C.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to  Ange menyval [0-8]: .
+        /// </summary>
+        internal static string ChooseMenu {
+            get {
+                return ResourceManager.GetString("ChooseMenu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Ange figurens diameter:.
         /// </summary>
         internal static string CirclePrompt {
@@ -120,6 +129,15 @@ namespace _1DV402.S2.L3C.Properties {
         internal static string Console_Title {
             get {
                 return ResourceManager.GetString("Console_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tryck tangent för att fortsätta.
+        /// </summary>
+        internal static string Continue_Prompt {
+            get {
+                return ResourceManager.GetString("Continue_Prompt", resourceCulture);
             }
         }
         
@@ -142,7 +160,7 @@ namespace _1DV402.S2.L3C.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FEL! Ett fel inträffade då figurens dimensioner tolkades..
+        ///   Looks up a localized string similar to  FEL! Ett fel inträffade då figurens dimensioner tolkades..
         /// </summary>
         internal static string DimensionsError {
             get {
@@ -300,6 +318,33 @@ namespace _1DV402.S2.L3C.Properties {
         internal static string Menu8 {
             get {
                 return ResourceManager.GetString("Menu8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to  FEL! Du måste ange ett nummer..
+        /// </summary>
+        internal static string MenuFormatError {
+            get {
+                return ResourceManager.GetString("MenuFormatError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to  FEL! Ange ett nummer mellan 0 och 8..
+        /// </summary>
+        internal static string MenuNumberError {
+            get {
+                return ResourceManager.GetString("MenuNumberError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to  FEL! På något sätt så blev ditt värde för stort eller för litet någonstans. Prova igen..
+        /// </summary>
+        internal static string OverFlowError {
+            get {
+                return ResourceManager.GetString("OverFlowError", resourceCulture);
             }
         }
         

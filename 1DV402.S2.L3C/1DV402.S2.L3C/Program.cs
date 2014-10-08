@@ -8,7 +8,7 @@ namespace _1DV402.S2.L3C
 {
     class Program
     {
-        private Shape CreateShape(ShapeType shapeType)
+        private static Shape CreateShape(ShapeType shapeType)
         {
             string type = Extensions.AsText(shapeType);
             Console.BackgroundColor = ConsoleColor.DarkRed;
@@ -36,7 +36,76 @@ namespace _1DV402.S2.L3C
         }
         static void Main(string[] args)
         {
-            Console.Title = Properties.Strings.Console_Title;   
+            Console.Title = Properties.Strings.Console_Title;
+            do
+            {
+                ViewMenu();
+                Console.Write(Properties.Strings.ChooseMenu);
+                try
+                {
+                    int answer = int.Parse(Console.ReadLine());
+                    if (answer >= 0 && answer <= 8)
+                    {
+                        Shape shape;
+                        switch (answer)
+                        {
+                            case 0:
+                                return; //Exit the program
+                            case 1:
+                                shape = CreateShape(ShapeType.Rectangle);
+                                ViewShapeDetail(shape);
+                                break;
+                            case 2:
+                                shape = CreateShape(ShapeType.Circle);
+                                ViewShapeDetail(shape);
+                                break;
+                            case 3:
+                                shape = CreateShape(ShapeType.Ellipse);
+                                ViewShapeDetail(shape);
+                                break;
+                            case 4:
+                                shape = CreateShape(ShapeType.Cuboid);
+                                ViewShapeDetail(shape);
+                                break;
+                            case 5:
+                                shape = CreateShape(ShapeType.Cylinder);
+                                ViewShapeDetail(shape);
+                                break;
+                            case 6:
+                                shape = CreateShape(ShapeType.Sphere);
+                                ViewShapeDetail(shape);
+                                break;
+                            case 7:
+                                ViewShapes(Randomize2DShapes());
+                                break;
+                            case 8:
+                                ViewShapes(Randomize3DShapes());
+                                break;
+                        }
+                    } 
+                    else 
+                    {
+                        throw new OverflowException();
+                    }
+                }
+                catch (FormatException)
+                {
+                    ViewMessage(Properties.Strings.MenuFormatError);
+                }
+                catch (OverflowException)
+                {
+                    ViewMessage(Properties.Strings.MenuNumberError);
+                }
+            } while(IsContinuing());
+        }
+        private static bool IsContinuing()
+        {
+            ViewMessage(Extensions.CenterAlignString(Properties.Strings.Continue_Prompt, Properties.Strings.BoxLine), ConsoleColor.DarkBlue);
+            if (Console.ReadKey(true).Key == ConsoleKey.Escape)
+            {
+                return false;
+            }
+            return true;
         }
         private static Shape2D[] Randomize2DShapes()
         {
@@ -126,7 +195,7 @@ namespace _1DV402.S2.L3C
                 }
                 catch
                 {
-                    ViewErrorMsg(Properties.Strings.DimensionsError);
+                    ViewMessage(Properties.Strings.DimensionsError);
                 }
             }
         }
@@ -187,7 +256,7 @@ namespace _1DV402.S2.L3C
             }
             Console.WriteLine();
         }
-        private static void ViewErrorMsg(string message, ConsoleColor backgroundColor = ConsoleColor.Red, ConsoleColor foregroundColor = ConsoleColor.White)
+        private static void ViewMessage(string message, ConsoleColor backgroundColor = ConsoleColor.Red, ConsoleColor foregroundColor = ConsoleColor.White)
         {
             Console.BackgroundColor = backgroundColor;
             Console.ForegroundColor = foregroundColor;

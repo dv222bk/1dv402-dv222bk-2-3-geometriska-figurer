@@ -21,7 +21,7 @@ namespace _1DV402.S2.L3C
             {
                 if (value <= 0)
                 {
-                    throw new ArgumentException();
+                    throw new OverflowException();
                 }
                 _height = value;
             }
@@ -38,7 +38,7 @@ namespace _1DV402.S2.L3C
         {
             get;
         }
-        public int CompareTo(object obj)
+        /*public int CompareTo(object obj)
         {
             if (obj == null)
             {
@@ -46,7 +46,7 @@ namespace _1DV402.S2.L3C
             }
             if (this.GetType() != obj.GetType())
             {
-                throw new ArgumentException();
+                throw new FormatException();
             }
             if (this.Volume < obj.Volume)
             {
@@ -57,7 +57,7 @@ namespace _1DV402.S2.L3C
                 return 1;
             }
             return 0; // Else they are the same
-        }
+        }*/
         protected Shape3D(ShapeType shapeType, Shape2D baseShape, double height) 
             : base(shapeType)
         {
@@ -75,7 +75,7 @@ namespace _1DV402.S2.L3C
             returnString += String.Format(Properties.Strings.Volume3D, Volume);
             return returnString;
         }
-        public string ToString(string format)
+        public override string ToString(string format)
         {
             Regex regex = new Regex("G|R");
             Match match = regex.Match(format);
