@@ -70,6 +70,24 @@ namespace _1DV402.S2.L3C.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to =                                   =.
+        /// </summary>
+        internal static string BoxEmptyLine {
+            get {
+                return ResourceManager.GetString("BoxEmptyLine", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to =====================================.
+        /// </summary>
+        internal static string BoxLine {
+            get {
+                return ResourceManager.GetString("BoxLine", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Höjd            :{0, 9}\n.
         /// </summary>
         internal static string Height3D {

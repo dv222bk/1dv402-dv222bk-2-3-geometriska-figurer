@@ -10,6 +10,10 @@ namespace _1DV402.S2.L3C
     {
         static void Main(string[] args)
         {
+            private Shape CreateShape(ShapeType shapeType)
+            {
+
+            }
         }
     }
 }
