@@ -88,6 +88,51 @@ namespace _1DV402.S2.L3C.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Ange figurens diameter:.
+        /// </summary>
+        internal static string CirclePrompt {
+            get {
+                return ResourceManager.GetString("CirclePrompt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ange figurens längd, bredd och höjd:.
+        /// </summary>
+        internal static string CuboidPrompt {
+            get {
+                return ResourceManager.GetString("CuboidPrompt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ange figurens horisontella radie, vertikala radie och höjd:.
+        /// </summary>
+        internal static string CylinderPrompt {
+            get {
+                return ResourceManager.GetString("CylinderPrompt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FEL! Ett fel inträffade då figurens dimensioner tolkades..
+        /// </summary>
+        internal static string DimensionsError {
+            get {
+                return ResourceManager.GetString("DimensionsError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ange figurens horisontella radie och vertikala radie:.
+        /// </summary>
+        internal static string EllipsePrompt {
+            get {
+                return ResourceManager.GetString("EllipsePrompt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Höjd            :{0, 9}\n.
         /// </summary>
         internal static string Height3D {
@@ -133,6 +178,15 @@ namespace _1DV402.S2.L3C.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Ange figurens längd och bredd:.
+        /// </summary>
+        internal static string RectanglePrompt {
+            get {
+                return ResourceManager.GetString("RectanglePrompt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {0}{1, 15}{2, 6}{3, 10}{4, 8}.
         /// </summary>
         internal static string Shape2DLine {
@@ -147,6 +201,15 @@ namespace _1DV402.S2.L3C.Properties {
         internal static string Shape3DLine {
             get {
                 return ResourceManager.GetString("Shape3DLine", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ange figurens radie:.
+        /// </summary>
+        internal static string SpherePrompt {
+            get {
+                return ResourceManager.GetString("SpherePrompt", resourceCulture);
             }
         }
         

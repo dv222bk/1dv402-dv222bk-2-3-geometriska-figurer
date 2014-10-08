@@ -126,6 +126,21 @@
   <data name="BoxLine" xml:space="preserve">
     <value>=====================================</value>
   </data>
+  <data name="CirclePrompt" xml:space="preserve">
+    <value>Ange figurens diameter:</value>
+  </data>
+  <data name="CuboidPrompt" xml:space="preserve">
+    <value>Ange figurens längd, bredd och höjd:</value>
+  </data>
+  <data name="CylinderPrompt" xml:space="preserve">
+    <value>Ange figurens horisontella radie, vertikala radie och höjd:</value>
+  </data>
+  <data name="DimensionsError" xml:space="preserve">
+    <value>FEL! Ett fel inträffade då figurens dimensioner tolkades.</value>
+  </data>
+  <data name="EllipsePrompt" xml:space="preserve">
+    <value>Ange figurens horisontella radie och vertikala radie:</value>
+  </data>
   <data name="Height3D" xml:space="preserve">
     <value>Höjd            :{0, 9}\n</value>
   </data>
@@ -141,11 +156,17 @@
   <data name="Perimeter2D" xml:space="preserve">
     <value>Area   :{0, 8}\n</value>
   </data>
+  <data name="RectanglePrompt" xml:space="preserve">
+    <value>Ange figurens längd och bredd:</value>
+  </data>
   <data name="Shape2DLine" xml:space="preserve">
     <value>{0}{1, 15}{2, 6}{3, 10}{4, 8}</value>
   </data>
   <data name="Shape3DLine" xml:space="preserve">
     <value>{0}{1, 15}{2, 6}{3, 6}{4, 12}{5, 12}{6, 12}</value>
+  </data>
+  <data name="SpherePrompt" xml:space="preserve">
+    <value>Ange figurens radie:</value>
   </data>
   <data name="TotalSurfaceArea3D" xml:space="preserve">
     <value>Begränsningsarea :{0, 9}\n</value>
