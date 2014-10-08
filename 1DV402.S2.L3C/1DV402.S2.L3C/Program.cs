@@ -37,15 +37,18 @@ namespace _1DV402.S2.L3C
         static void Main(string[] args)
         {
             Console.Title = Properties.Strings.Console_Title;
-            do
+            while(true)
             {
                 ViewMenu();
+                Console.ForegroundColor = ConsoleColor.White;
                 Console.Write(Properties.Strings.ChooseMenu);
+                Console.ResetColor();
                 try
                 {
                     int answer = int.Parse(Console.ReadLine());
                     if (answer >= 0 && answer <= 8)
                     {
+                        Console.Clear();
                         Shape shape;
                         switch (answer)
                         {
@@ -96,16 +99,10 @@ namespace _1DV402.S2.L3C
                 {
                     ViewMessage(Properties.Strings.MenuNumberError);
                 }
-            } while(IsContinuing());
-        }
-        private static bool IsContinuing()
-        {
-            ViewMessage(Extensions.CenterAlignString(Properties.Strings.Continue_Prompt, Properties.Strings.BoxLine), ConsoleColor.DarkBlue);
-            if (Console.ReadKey(true).Key == ConsoleKey.Escape)
-            {
-                return false;
+                ViewMessage(Extensions.CenterAlignString(Properties.Strings.Continue_Prompt, Properties.Strings.BoxLine), ConsoleColor.DarkBlue);
+                Console.ReadKey();
+                Console.Clear();
             }
-            return true;
         }
         private static Shape2D[] Randomize2DShapes()
         {
@@ -153,7 +150,7 @@ namespace _1DV402.S2.L3C
         }
         private static double[] ReadDimensions(ShapeType shapeType)
         {
-            switch (Extensions.AsText(shapeType))
+            switch (shapeType.ToString())
             {
                 case "Cuboid":
                     return ReadDoublesGreaterThanZero(Properties.Strings.CuboidPrompt, 3);
@@ -173,6 +170,7 @@ namespace _1DV402.S2.L3C
         {
             while(true) 
             {
+                Console.WriteLine();
                 Console.Write(prompt);
                 string answer = Console.ReadLine();
                 string[] values = answer.Split(' ');
@@ -208,7 +206,7 @@ namespace _1DV402.S2.L3C
             Console.WriteLine(Extensions.InsertEquals(Extensions.CenterAlignString(Properties.Strings.MainMenuHeader, Properties.Strings.BoxLine)));
             Console.WriteLine(Properties.Strings.BoxEmptyLine);
             Console.WriteLine(Properties.Strings.BoxLine);
-            Console.ResetColor();
+            Console.BackgroundColor = ConsoleColor.Black;
             Console.WriteLine();
             Console.WriteLine(Properties.Strings.Menu0);
             Console.WriteLine(Properties.Strings.Menu1);
@@ -222,9 +220,11 @@ namespace _1DV402.S2.L3C
             Console.WriteLine();
             Console.WriteLine(Properties.Strings.BoxLine);
             Console.WriteLine();
+            Console.ResetColor();
         }
         private static void ViewShapeDetail(Shape shape)
         {
+            Console.WriteLine();
             Console.BackgroundColor = ConsoleColor.DarkRed;
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine(Properties.Strings.BoxLine);
@@ -234,10 +234,15 @@ namespace _1DV402.S2.L3C
             Console.WriteLine();
             Console.WriteLine(shape.ToString());
             Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine(Properties.Strings.BoxLine);
-            Console.WriteLine();
+            Console.ResetColor();
         }
-        private static void ViewShapes(Shape[] shapes){
+        private static void ViewShapes(Shape[] shapes)
+        {
+            Console.Clear();
+            Console.BackgroundColor = ConsoleColor.DarkRed;
+            Console.ForegroundColor = ConsoleColor.White;
             if (shapes[0].IsShape3D)
             {
                 Console.WriteLine(Properties.Strings.BoxLine3D);
@@ -250,11 +255,11 @@ namespace _1DV402.S2.L3C
                 Console.WriteLine(Properties.Strings.Header2D);
                 Console.WriteLine(Properties.Strings.BoxLine2D);
             }
+            Console.ResetColor();
             foreach (Shape shape in shapes)
             {
                 Console.WriteLine(shape.ToString("R"));
             }
-            Console.WriteLine();
         }
         private static void ViewMessage(string message, ConsoleColor backgroundColor = ConsoleColor.Red, ConsoleColor foregroundColor = ConsoleColor.White)
         {
@@ -263,7 +268,6 @@ namespace _1DV402.S2.L3C
             Console.WriteLine();
             Console.WriteLine(message);
             Console.ResetColor();
-            Console.WriteLine();
         }
     }
 }

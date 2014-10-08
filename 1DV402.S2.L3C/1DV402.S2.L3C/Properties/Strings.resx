@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Area2D" xml:space="preserve">
-    <value>Omkrets:{0, 8}\n</value>
+    <value>Area   :{0, 8:F1}</value>
   </data>
   <data name="BoxEmptyLine" xml:space="preserve">
     <value>=                                   =</value>
@@ -135,8 +135,11 @@
   <data name="ChooseMenu" xml:space="preserve">
     <value> Ange menyval [0-8]: </value>
   </data>
+  <data name="Circle" xml:space="preserve">
+    <value>Cirkel</value>
+  </data>
   <data name="CirclePrompt" xml:space="preserve">
-    <value>Ange figurens diameter:</value>
+    <value>Ange figurens diameter: </value>
   </data>
   <data name="Console_Title" xml:space="preserve">
     <value>Geometriska figurer - nivå C</value>
@@ -144,17 +147,26 @@
   <data name="Continue_Prompt" xml:space="preserve">
     <value>Tryck tangent för att fortsätta</value>
   </data>
+  <data name="Cuboid" xml:space="preserve">
+    <value>Rätblock</value>
+  </data>
   <data name="CuboidPrompt" xml:space="preserve">
-    <value>Ange figurens längd, bredd och höjd:</value>
+    <value>Ange figurens längd, bredd och höjd: </value>
+  </data>
+  <data name="Cylinder" xml:space="preserve">
+    <value>Cylinder</value>
   </data>
   <data name="CylinderPrompt" xml:space="preserve">
-    <value>Ange figurens horisontella radie, vertikala radie och höjd:</value>
+    <value>Ange figurens horisontella radie, vertikala radie och höjd: </value>
   </data>
   <data name="DimensionsError" xml:space="preserve">
     <value> FEL! Ett fel inträffade då figurens dimensioner tolkades.</value>
   </data>
+  <data name="Ellipse" xml:space="preserve">
+    <value>Ellips</value>
+  </data>
   <data name="EllipsePrompt" xml:space="preserve">
-    <value>Ange figurens horisontella radie och vertikala radie:</value>
+    <value>Ange figurens horisontella radie och vertikala radie: </value>
   </data>
   <data name="Header2D" xml:space="preserve">
     <value>Figur      Längd Bredd Omkrets    Area</value>
@@ -163,19 +175,19 @@
     <value>Figur      Längd Bredd  Höjd   Mantelarea Begräns.area        Volym</value>
   </data>
   <data name="Height3D" xml:space="preserve">
-    <value>Höjd            :{0, 9}\n</value>
+    <value>Höjd             :{0, 9:F1}</value>
   </data>
   <data name="Length2D" xml:space="preserve">
-    <value>Längd  :{0, 8}\n</value>
+    <value>Längd  :{0, 8:F1}</value>
   </data>
   <data name="Length3D" xml:space="preserve">
-    <value>Längd           :{0, 9}\n</value>
+    <value>Längd            :{0, 9:F1}</value>
   </data>
   <data name="MainMenuHeader" xml:space="preserve">
     <value>Geometriska figurer</value>
   </data>
   <data name="MantelArea3D" xml:space="preserve">
-    <value>Mantelarea      :{0, 9}\n</value>
+    <value>Mantelarea       :{0, 9:F1}</value>
   </data>
   <data name="Menu0" xml:space="preserve">
     <value> 0. Avsluta.</value>
@@ -214,33 +226,39 @@
     <value> FEL! På något sätt så blev ditt värde för stort eller för litet någonstans. Prova igen.</value>
   </data>
   <data name="Perimeter2D" xml:space="preserve">
-    <value>Area   :{0, 8}\n</value>
+    <value>Omkrets:{0, 8:N1}</value>
+  </data>
+  <data name="Rectangle" xml:space="preserve">
+    <value>Rektangel</value>
   </data>
   <data name="RectanglePrompt" xml:space="preserve">
-    <value>Ange figurens längd och bredd:</value>
+    <value>Ange figurens längd och bredd: </value>
   </data>
   <data name="Shape2DLine" xml:space="preserve">
-    <value>{0}{1, 15}{2, 6}{3, 10}{4, 8}</value>
+    <value>{0, -9}{1, 7:F1}{2, 6:F1}{3, 8:F1}{4, 8:F1}</value>
   </data>
   <data name="Shape3DLine" xml:space="preserve">
-    <value>{0}{1, 15}{2, 6}{3, 6}{4, 12}{5, 12}{6, 12}</value>
+    <value>{0, -8}{1, 8:F1}{2, 6:F1}{3, 6:F1}{4, 13:F1}{5, 13:F1}{6, 13:F1}</value>
+  </data>
+  <data name="Sphere" xml:space="preserve">
+    <value>Sfär</value>
   </data>
   <data name="SpherePrompt" xml:space="preserve">
-    <value>Ange figurens radie:</value>
+    <value>Ange figurens radie: </value>
   </data>
   <data name="TotalSurfaceArea3D" xml:space="preserve">
-    <value>Begränsningsarea :{0, 9}\n</value>
+    <value>Begränsningsarea :{0, 9:F1}</value>
   </data>
   <data name="ViewDetailsHeader" xml:space="preserve">
     <value>Detaljer</value>
   </data>
   <data name="Volume3D" xml:space="preserve">
-    <value>Volym           :{0, 9}\n</value>
+    <value>Volym            :{0, 9:F1}</value>
   </data>
   <data name="Width2D" xml:space="preserve">
-    <value>Bredd  :{0, 8}\n</value>
+    <value>Bredd  :{0, 8:F1}</value>
   </data>
   <data name="Width3D" xml:space="preserve">
-    <value>Bredd           :{0, 9}\n</value>
+    <value>Bredd            :{0, 9:F1}</value>
   </data>
 </root>

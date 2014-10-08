@@ -8,21 +8,21 @@ namespace _1DV402.S2.L3C
 {
     public class Sphere : Shape3D
     {
-        public double MantelArea
+        public override double MantelArea
         {
             get
             {
                 return _baseShape.Area * 4;
             }
         }
-        public double TotalSurfaceArea
+        public override double TotalSurfaceArea
         {
             get
             {
                 return _baseShape.Area * 4;
             }
         }
-        public double Volume
+        public override double Volume
         {
             get
             {

@@ -8,21 +8,21 @@ namespace _1DV402.S2.L3C
 {
     public class Cylinder : Shape3D
     {
-        public double MantelArea
+        public override double MantelArea
         {
             get
             {
                 return _baseShape.Perimeter * Height;
             }
         }
-        public double TotalSurfaceArea
+        public override double TotalSurfaceArea
         {
             get
             {
                 return MantelArea + 2 * _baseShape.Area;
             }
         }
-        public double Volume
+        public override double Volume
         {
             get
             {

@@ -79,9 +79,9 @@ namespace _1DV402.S2.L3C
         public override string ToString()
         {
             string returnString;
-            returnString = String.Format(Properties.Strings.Length2D, Length);
-            returnString += String.Format(Properties.Strings.Width2D, Width);
-            returnString += String.Format(Properties.Strings.Perimeter2D, Perimeter);
+            returnString = String.Format(Properties.Strings.Length2D, Length) + Environment.NewLine;
+            returnString += String.Format(Properties.Strings.Width2D, Width) + Environment.NewLine;
+            returnString += String.Format(Properties.Strings.Perimeter2D, Perimeter) + Environment.NewLine;
             returnString += String.Format(Properties.Strings.Area2D, Area);
             return returnString;
         }

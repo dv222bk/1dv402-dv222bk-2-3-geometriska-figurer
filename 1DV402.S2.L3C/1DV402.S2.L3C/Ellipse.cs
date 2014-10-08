@@ -8,18 +8,18 @@ namespace _1DV402.S2.L3C
 {
     public class Ellipse : Shape2D
     {
-        public double Area
+        public override double Area
         {
             get
             {
-                return Math.PI * Length * Width;
+                return Math.PI * (Length / 2) * (Width / 2);
             }
         }
-        public double Perimeter
+        public override double Perimeter
         {
             get
             {
-                return Math.PI * Math.Sqrt(2 * Length * Length + 2 * Width * Width);
+                return Math.PI * Math.Sqrt(2 * (Length / 2) * (Length / 2) + 2 * (Width / 2) * (Width / 2));
             }
         }
         public Ellipse(double diameter) 

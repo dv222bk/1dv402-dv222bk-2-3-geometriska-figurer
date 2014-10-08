@@ -8,21 +8,21 @@ namespace _1DV402.S2.L3C
 {
     public class Cuboid : Shape3D
     {
-        public double MantelArea
+        public override double MantelArea
         {
             get
             {
                 return _baseShape.Perimeter * Height;
             }
         }
-        public double TotalSurfaceArea
+        public override double TotalSurfaceArea
         {
             get
             {
                 return MantelArea + 2 * _baseShape.Area;
             }
         }
-        public double Volume
+        public override double Volume
         {
             get
             {
@@ -30,6 +30,6 @@ namespace _1DV402.S2.L3C
             }
         }
         public Cuboid(double length, double width, double height) 
-            : base(ShapeType.Cubiod, new Rectangle(length, width), height ) { }
+            : base(ShapeType.Cuboid, new Rectangle(length, width), height ) { }
     }
 }

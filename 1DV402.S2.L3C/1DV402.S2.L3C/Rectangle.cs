@@ -8,14 +8,14 @@ namespace _1DV402.S2.L3C
 {
     public class Rectangle : Shape2D
     {
-        public double Area
+        public override double Area
         {
             get
             {
                 return Length * Width;
             }
         }
-        public double Perimeter
+        public override double Perimeter
         {
             get
             {

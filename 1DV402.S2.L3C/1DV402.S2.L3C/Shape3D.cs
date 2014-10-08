@@ -67,11 +67,11 @@ namespace _1DV402.S2.L3C
         public override string ToString()
         {
             string returnString;
-            returnString = String.Format(Properties.Strings.Length3D, _baseShape.Length);
-            returnString += String.Format(Properties.Strings.Width3D, _baseShape.Width);
-            returnString += String.Format(Properties.Strings.Height3D, Height);
-            returnString += String.Format(Properties.Strings.MantelArea3D, MantelArea);
-            returnString += String.Format(Properties.Strings.TotalSurfaceArea3D, TotalSurfaceArea);
+            returnString = String.Format(Properties.Strings.Length3D, _baseShape.Length) + Environment.NewLine;
+            returnString += String.Format(Properties.Strings.Width3D, _baseShape.Width) + Environment.NewLine;
+            returnString += String.Format(Properties.Strings.Height3D, Height) + Environment.NewLine;
+            returnString += String.Format(Properties.Strings.MantelArea3D, MantelArea) + Environment.NewLine;
+            returnString += String.Format(Properties.Strings.TotalSurfaceArea3D, TotalSurfaceArea) + Environment.NewLine;
             returnString += String.Format(Properties.Strings.Volume3D, Volume);
             return returnString;
         }

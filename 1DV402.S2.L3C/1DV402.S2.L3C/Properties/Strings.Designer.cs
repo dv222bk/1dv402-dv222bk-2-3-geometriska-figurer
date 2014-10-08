@@ -61,7 +61,7 @@ namespace _1DV402.S2.L3C.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Omkrets:{0, 8}\n.
+        ///   Looks up a localized string similar to Area   :{0, 8:F1}.
         /// </summary>
         internal static string Area2D {
             get {
@@ -115,7 +115,16 @@ namespace _1DV402.S2.L3C.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ange figurens diameter:.
+        ///   Looks up a localized string similar to Cirkel.
+        /// </summary>
+        internal static string Circle {
+            get {
+                return ResourceManager.GetString("Circle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ange figurens diameter: .
         /// </summary>
         internal static string CirclePrompt {
             get {
@@ -142,7 +151,16 @@ namespace _1DV402.S2.L3C.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ange figurens längd, bredd och höjd:.
+        ///   Looks up a localized string similar to Rätblock.
+        /// </summary>
+        internal static string Cuboid {
+            get {
+                return ResourceManager.GetString("Cuboid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ange figurens längd, bredd och höjd: .
         /// </summary>
         internal static string CuboidPrompt {
             get {
@@ -151,7 +169,16 @@ namespace _1DV402.S2.L3C.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ange figurens horisontella radie, vertikala radie och höjd:.
+        ///   Looks up a localized string similar to Cylinder.
+        /// </summary>
+        internal static string Cylinder {
+            get {
+                return ResourceManager.GetString("Cylinder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ange figurens horisontella radie, vertikala radie och höjd: .
         /// </summary>
         internal static string CylinderPrompt {
             get {
@@ -169,7 +196,16 @@ namespace _1DV402.S2.L3C.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ange figurens horisontella radie och vertikala radie:.
+        ///   Looks up a localized string similar to Ellips.
+        /// </summary>
+        internal static string Ellipse {
+            get {
+                return ResourceManager.GetString("Ellipse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ange figurens horisontella radie och vertikala radie: .
         /// </summary>
         internal static string EllipsePrompt {
             get {
@@ -196,7 +232,7 @@ namespace _1DV402.S2.L3C.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Höjd            :{0, 9}\n.
+        ///   Looks up a localized string similar to Höjd             :{0, 9:F1}.
         /// </summary>
         internal static string Height3D {
             get {
@@ -205,7 +241,7 @@ namespace _1DV402.S2.L3C.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Längd  :{0, 8}\n.
+        ///   Looks up a localized string similar to Längd  :{0, 8:F1}.
         /// </summary>
         internal static string Length2D {
             get {
@@ -214,7 +250,7 @@ namespace _1DV402.S2.L3C.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Längd           :{0, 9}\n.
+        ///   Looks up a localized string similar to Längd            :{0, 9:F1}.
         /// </summary>
         internal static string Length3D {
             get {
@@ -232,7 +268,7 @@ namespace _1DV402.S2.L3C.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Mantelarea      :{0, 9}\n.
+        ///   Looks up a localized string similar to Mantelarea       :{0, 9:F1}.
         /// </summary>
         internal static string MantelArea3D {
             get {
@@ -349,7 +385,7 @@ namespace _1DV402.S2.L3C.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Area   :{0, 8}\n.
+        ///   Looks up a localized string similar to Omkrets:{0, 8:N1}.
         /// </summary>
         internal static string Perimeter2D {
             get {
@@ -358,7 +394,16 @@ namespace _1DV402.S2.L3C.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ange figurens längd och bredd:.
+        ///   Looks up a localized string similar to Rektangel.
+        /// </summary>
+        internal static string Rectangle {
+            get {
+                return ResourceManager.GetString("Rectangle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ange figurens längd och bredd: .
         /// </summary>
         internal static string RectanglePrompt {
             get {
@@ -367,7 +412,7 @@ namespace _1DV402.S2.L3C.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {0}{1, 15}{2, 6}{3, 10}{4, 8}.
+        ///   Looks up a localized string similar to {0, -9}{1, 7:F1}{2, 6:F1}{3, 8:F1}{4, 8:F1}.
         /// </summary>
         internal static string Shape2DLine {
             get {
@@ -376,7 +421,7 @@ namespace _1DV402.S2.L3C.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {0}{1, 15}{2, 6}{3, 6}{4, 12}{5, 12}{6, 12}.
+        ///   Looks up a localized string similar to {0, -8}{1, 8:F1}{2, 6:F1}{3, 6:F1}{4, 13:F1}{5, 13:F1}{6, 13:F1}.
         /// </summary>
         internal static string Shape3DLine {
             get {
@@ -385,7 +430,16 @@ namespace _1DV402.S2.L3C.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ange figurens radie:.
+        ///   Looks up a localized string similar to Sfär.
+        /// </summary>
+        internal static string Sphere {
+            get {
+                return ResourceManager.GetString("Sphere", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ange figurens radie: .
         /// </summary>
         internal static string SpherePrompt {
             get {
@@ -394,7 +448,7 @@ namespace _1DV402.S2.L3C.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Begränsningsarea :{0, 9}\n.
+        ///   Looks up a localized string similar to Begränsningsarea :{0, 9:F1}.
         /// </summary>
         internal static string TotalSurfaceArea3D {
             get {
@@ -412,7 +466,7 @@ namespace _1DV402.S2.L3C.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volym           :{0, 9}\n.
+        ///   Looks up a localized string similar to Volym            :{0, 9:F1}.
         /// </summary>
         internal static string Volume3D {
             get {
@@ -421,7 +475,7 @@ namespace _1DV402.S2.L3C.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bredd  :{0, 8}\n.
+        ///   Looks up a localized string similar to Bredd  :{0, 8:F1}.
         /// </summary>
         internal static string Width2D {
             get {
@@ -430,7 +484,7 @@ namespace _1DV402.S2.L3C.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bredd           :{0, 9}\n.
+        ///   Looks up a localized string similar to Bredd            :{0, 9:F1}.
         /// </summary>
         internal static string Width3D {
             get {
