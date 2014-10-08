@@ -22,9 +22,7 @@ namespace _1DV402.S2.L3C
                 return Math.PI * Math.Sqrt(2 * Length * Length + 2 * Width * Width);
             }
         }
-        public Ellipse(double diameter) 
-            : base(ShapeType.Circle, diameter, diameter) { }
-        public Ellipse(double hdiameter, double vdiameter) 
-            : base(ShapeType.Ellipse, hdiameter, vdiameter) { }
+        public Ellipse(double diameter) : base(ShapeType.Circle, diameter, diameter) { }
+        public Ellipse(double hdiameter, double vdiameter) : base(ShapeType.Ellipse, hdiameter, vdiameter) { }
     }
 }

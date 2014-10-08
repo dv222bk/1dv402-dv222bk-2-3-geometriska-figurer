@@ -70,8 +70,7 @@ namespace _1DV402.S2.L3C
             }
             return 0; // Else they are the same
         }
-        protected Shape2D(ShapeType shapeType, double length, double width) 
-            : base(shapeType)
+        protected Shape2D(ShapeType shapeType, double length, double width) : base(shapeType)
         {
             Length = length;
             Width = width;

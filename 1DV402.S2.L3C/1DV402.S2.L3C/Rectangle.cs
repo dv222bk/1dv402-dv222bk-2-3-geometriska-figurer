@@ -22,7 +22,6 @@ namespace _1DV402.S2.L3C
                 return 2 * Length + 2 * Width;
             }
         }
-        public Rectangle(double length, double width) 
-            : base(ShapeType.Rectangle, length, width) { }
+        public Rectangle(double length, double width) : base(ShapeType.Rectangle, length, width) { }
     }
 }
