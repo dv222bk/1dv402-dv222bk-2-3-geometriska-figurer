@@ -126,9 +126,6 @@
   <data name="BoxLine" xml:space="preserve">
     <value>=====================================</value>
   </data>
-  <data name="BoxMessage" xml:space="preserve">
-    <value />
-  </data>
   <data name="Height3D" xml:space="preserve">
     <value>Höjd            :{0, 9}\n</value>
   </data>
