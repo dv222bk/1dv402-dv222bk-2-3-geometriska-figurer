@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace _1DV402.S2.L3C
 {
-    public abstract class Shape2D
+    public abstract class Shape2D : Shape
     {
         private double _length;
         private double _width;
@@ -38,7 +38,7 @@ namespace _1DV402.S2.L3C
         {
             get
             {
-                return (_length * 2) + (_width * 2);
+                return _length * 2 + _width * 2;
             }
         }
         public double Width
@@ -77,23 +77,36 @@ namespace _1DV402.S2.L3C
 
             return 0; // Else they are the same
         }
-        protected Shape2D(ShapeType shapeType, double length, double width)
+        protected Shape2D(ShapeType shapeType, double length, double width) : base(shapeType)
         {
             Length = length;
             Width = width;
         }
         public override string ToString()
         {
-            return base.ToString();
+            string returnString;
+            returnString = String.Format(Properties.Strings.Length, Length) + "\n";
+            returnString += String.Format(Properties.Strings.Width, Width) + "\n";
+            returnString += String.Format(Properties.Strings.Perimeter, Perimeter) + "\n";
+            returnString += String.Format(Properties.Strings.Area, Area) + "\n";
+            return returnString;
         }
         public string ToString(string format)
         {
-            Regex regex = new Regex("G|0|G");
+            Regex regex = new Regex("G|R");
             Match match = regex.Match(format);
             if (match.Success || String.IsNullOrEmpty(format))
             {
-
+                if ("G" == match.Value || String.IsNullOrEmpty(format))
+                {
+                    return ToString();
+                }
+                else if ("R" == match.Value)
+                {
+                    return String.Format(Properties.Strings.Shape2DLine, ShapeType, Length, Width, Perimeter, Area);
+                }
             }
+            throw new FormatException();
         }
     }
 }
