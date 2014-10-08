@@ -6,30 +6,30 @@ using System.Threading.Tasks;
 
 namespace _1DV402.S2.L3C
 {
-    public class Cylinder : Shape3D
+    public class Sphere : Shape3D
     {
         public double MantelArea
         {
             get
             {
-                return _baseShape.Perimeter * Height;
+                return _baseShape.Area * 4;
             }
         }
         public double TotalSurfaceArea
         {
             get
             {
-                return MantelArea + 2 * _baseShape.Area;
+                return _baseShape.Area * 4;
             }
         }
         public double Volume
         {
             get
             {
-                return _baseShape.Area * Height;
+                return 4 / 3 * _baseShape.Area * Height / 2;
             }
         }
-        public Cylinder(double hradius, double vradius, double height) 
-            : base(ShapeType.Cylinder, new Ellipse(hradius, vradius), height ) { }
+        public Sphere(double radius) 
+            : base(ShapeType.Sphere, new Ellipse(radius * 2), radius * 2) { }
     }
 }

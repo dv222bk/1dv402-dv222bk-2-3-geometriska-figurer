@@ -29,7 +29,7 @@ namespace _1DV402.S2.L3C
             ShapeType = shapeType;
         }
         public abstract string ToString(string format) {
-
+            return ShapeType.ToString();
         }
     }
 }
