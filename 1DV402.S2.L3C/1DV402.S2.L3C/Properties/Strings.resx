@@ -117,19 +117,40 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Area" xml:space="preserve">
-    <value>Omkrets:{0, 8}</value>
+  <data name="Area2D" xml:space="preserve">
+    <value>Omkrets:{0, 8}\n</value>
   </data>
-  <data name="Length" xml:space="preserve">
-    <value>Längd  :{0, 8}</value>
+  <data name="Height3D" xml:space="preserve">
+    <value>Höjd            :{0, 9}\n</value>
   </data>
-  <data name="Perimeter" xml:space="preserve">
-    <value>Area   :{0, 8}</value>
+  <data name="Length2D" xml:space="preserve">
+    <value>Längd  :{0, 8}\n</value>
+  </data>
+  <data name="Length3D" xml:space="preserve">
+    <value>Längd           :{0, 9}\n</value>
+  </data>
+  <data name="MantelArea3D" xml:space="preserve">
+    <value>Mantelarea      :{0, 9}\n</value>
+  </data>
+  <data name="Perimeter2D" xml:space="preserve">
+    <value>Area   :{0, 8}\n</value>
   </data>
   <data name="Shape2DLine" xml:space="preserve">
-    <value>{0}{1, 15}{2, 21}{3, 31}{4, 39}</value>
+    <value>{0}{1, 15}{2, 6}{3, 10}{4, 8}</value>
   </data>
-  <data name="Width" xml:space="preserve">
-    <value>Bredd  :{0, 8}</value>
+  <data name="Shape3DLine" xml:space="preserve">
+    <value>{0}{1, 15}{2, 6}{3, 6}{4, 12}{5, 12}{6, 12}</value>
+  </data>
+  <data name="TotalSurfaceArea3D" xml:space="preserve">
+    <value>Begränsningsarea :{0, 9}\n</value>
+  </data>
+  <data name="Volume3D" xml:space="preserve">
+    <value>Volym           :{0, 9}\n</value>
+  </data>
+  <data name="Width2D" xml:space="preserve">
+    <value>Bredd  :{0, 8}\n</value>
+  </data>
+  <data name="Width3D" xml:space="preserve">
+    <value>Bredd           :{0, 9}\n</value>
   </data>
 </root>

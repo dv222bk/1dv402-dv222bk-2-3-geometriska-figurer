@@ -61,34 +61,61 @@ namespace _1DV402.S2.L3C.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Omkrets:{0, 8}.
+        ///   Looks up a localized string similar to Omkrets:{0, 8}\n.
         /// </summary>
-        internal static string Area {
+        internal static string Area2D {
             get {
-                return ResourceManager.GetString("Area", resourceCulture);
+                return ResourceManager.GetString("Area2D", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Längd  :{0, 8}.
+        ///   Looks up a localized string similar to Höjd            :{0, 9}\n.
         /// </summary>
-        internal static string Length {
+        internal static string Height3D {
             get {
-                return ResourceManager.GetString("Length", resourceCulture);
+                return ResourceManager.GetString("Height3D", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Area   :{0, 8}.
+        ///   Looks up a localized string similar to Längd  :{0, 8}\n.
         /// </summary>
-        internal static string Perimeter {
+        internal static string Length2D {
             get {
-                return ResourceManager.GetString("Perimeter", resourceCulture);
+                return ResourceManager.GetString("Length2D", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {0}{1, 15}{2, 21}{3, 31}{4, 39}.
+        ///   Looks up a localized string similar to Längd           :{0, 9}\n.
+        /// </summary>
+        internal static string Length3D {
+            get {
+                return ResourceManager.GetString("Length3D", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mantelarea      :{0, 9}\n.
+        /// </summary>
+        internal static string MantelArea3D {
+            get {
+                return ResourceManager.GetString("MantelArea3D", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Area   :{0, 8}\n.
+        /// </summary>
+        internal static string Perimeter2D {
+            get {
+                return ResourceManager.GetString("Perimeter2D", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0}{1, 15}{2, 6}{3, 10}{4, 8}.
         /// </summary>
         internal static string Shape2DLine {
             get {
@@ -97,11 +124,47 @@ namespace _1DV402.S2.L3C.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bredd  :{0, 8}.
+        ///   Looks up a localized string similar to {0}{1, 15}{2, 6}{3, 6}{4, 12}{5, 12}{6, 12}.
         /// </summary>
-        internal static string Width {
+        internal static string Shape3DLine {
             get {
-                return ResourceManager.GetString("Width", resourceCulture);
+                return ResourceManager.GetString("Shape3DLine", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Begränsningsarea :{0, 9}\n.
+        /// </summary>
+        internal static string TotalSurfaceArea3D {
+            get {
+                return ResourceManager.GetString("TotalSurfaceArea3D", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Volym           :{0, 9}\n.
+        /// </summary>
+        internal static string Volume3D {
+            get {
+                return ResourceManager.GetString("Volume3D", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bredd  :{0, 8}\n.
+        /// </summary>
+        internal static string Width2D {
+            get {
+                return ResourceManager.GetString("Width2D", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bredd           :{0, 9}\n.
+        /// </summary>
+        internal static string Width3D {
+            get {
+                return ResourceManager.GetString("Width3D", resourceCulture);
             }
         }
     }
