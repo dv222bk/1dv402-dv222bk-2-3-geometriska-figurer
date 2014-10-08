@@ -14,10 +14,15 @@ namespace _1DV402.S2.L3C
         }
         public static string CenterAlignString(this string s, string other)
         {
-            string returnString = "=";
-            returnString.PadLeft(((other.Length - s.Length - 1) / 2) + s.Length).PadRight(other.Length - 1); //http://stackoverflow.com/questions/8200661/how-to-align-string-in-fixed-length-string
-            returnString += "=";
+            string returnString = "";
+            returnString.PadLeft(((other.Length - s.Length) / 2) + s.Length).PadRight(other.Length); //http://stackoverflow.com/questions/8200661/how-to-align-string-in-fixed-length-string
             return returnString;
+        }
+        public static string InsertEquals(this string s)
+        {
+            s.Remove(0, 1);
+            s.Remove(s.Length - 1, 1);
+            return "=" + s + "=";
         }
     }
 }

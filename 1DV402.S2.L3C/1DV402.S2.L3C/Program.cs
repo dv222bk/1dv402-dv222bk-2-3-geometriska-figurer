@@ -14,7 +14,7 @@ namespace _1DV402.S2.L3C
             Console.BackgroundColor = ConsoleColor.DarkRed;
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine(Properties.Strings.BoxLine);
-            Console.WriteLine(Extensions.CenterAlignString(type, Properties.Strings.BoxLine));
+            Console.WriteLine(Extensions.InsertEquals(Extensions.CenterAlignString(type, Properties.Strings.BoxLine)));
             Console.WriteLine(Properties.Strings.BoxLine);
             Console.ResetColor();
             double[] Dimensions = ReadDimensions(shapeType);
@@ -37,6 +37,14 @@ namespace _1DV402.S2.L3C
         static void Main(string[] args)
         {
             
+        }
+        private static Shape2D[] Randomize2DShapes()
+        {
+
+        }
+        private static Shape3D[] Randomize3DShapes()
+        {
+
         }
         private static double[] ReadDimensions(ShapeType shapeType)
         {
@@ -85,6 +93,37 @@ namespace _1DV402.S2.L3C
                     ShowError(Properties.Strings.DimensionsError);
                 }
             }
+        }
+        private static void ViewMenu()
+        {
+            Console.BackgroundColor = ConsoleColor.DarkRed;
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine(Properties.Strings.BoxLine);
+            Console.WriteLine(Properties.Strings.BoxEmptyLine);
+            Console.WriteLine(Extensions.InsertEquals(Extensions.CenterAlignString(Properties.Strings.MainMenuHeader, Properties.Strings.BoxLine)));
+            Console.WriteLine(Properties.Strings.BoxEmptyLine);
+            Console.WriteLine(Properties.Strings.BoxLine);
+            Console.ResetColor();
+            Console.WriteLine();
+            Console.WriteLine(Properties.Strings.Menu0);
+            Console.WriteLine(Properties.Strings.Menu1);
+            Console.WriteLine(Properties.Strings.Menu2);
+            Console.WriteLine(Properties.Strings.Menu3);
+            Console.WriteLine(Properties.Strings.Menu4);
+            Console.WriteLine(Properties.Strings.Menu5);
+            Console.WriteLine(Properties.Strings.Menu6);
+            Console.WriteLine(Properties.Strings.Menu7);
+            Console.WriteLine(Properties.Strings.Menu8);
+            Console.WriteLine();
+            Console.WriteLine(Properties.Strings.BoxLine);
+            Console.WriteLine();
+        }
+        private static void ViewShapeDetail(Shape shape)
+        {
+
+        }
+        private static void ViewShapes(Shape[] shapes){
+
         }
         private static void ShowError(string message,
             ConsoleColor backgroundColor = ConsoleColor.Red,

@@ -150,8 +150,38 @@
   <data name="Length3D" xml:space="preserve">
     <value>Längd           :{0, 9}\n</value>
   </data>
+  <data name="MainMenuHeader" xml:space="preserve">
+    <value>Geometriska figurer</value>
+  </data>
   <data name="MantelArea3D" xml:space="preserve">
     <value>Mantelarea      :{0, 9}\n</value>
+  </data>
+  <data name="Menu0" xml:space="preserve">
+    <value> 0. Avsluta.</value>
+  </data>
+  <data name="Menu1" xml:space="preserve">
+    <value> 1. Rektangel.</value>
+  </data>
+  <data name="Menu2" xml:space="preserve">
+    <value> 2. Cirkel.</value>
+  </data>
+  <data name="Menu3" xml:space="preserve">
+    <value> 3. Ellips.</value>
+  </data>
+  <data name="Menu4" xml:space="preserve">
+    <value> 4. Rätblock.</value>
+  </data>
+  <data name="Menu5" xml:space="preserve">
+    <value> 5. Cylinder.</value>
+  </data>
+  <data name="Menu6" xml:space="preserve">
+    <value> 6. Sfär.</value>
+  </data>
+  <data name="Menu7" xml:space="preserve">
+    <value> 7. Slumpa 2D-figurer.</value>
+  </data>
+  <data name="Menu8" xml:space="preserve">
+    <value> 8. Slumpa 3D-figurer.</value>
   </data>
   <data name="Perimeter2D" xml:space="preserve">
     <value>Area   :{0, 8}\n</value>

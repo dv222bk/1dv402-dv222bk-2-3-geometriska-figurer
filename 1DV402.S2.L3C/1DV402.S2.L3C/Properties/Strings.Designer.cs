@@ -160,11 +160,101 @@ namespace _1DV402.S2.L3C.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Geometriska figurer.
+        /// </summary>
+        internal static string MainMenuHeader {
+            get {
+                return ResourceManager.GetString("MainMenuHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Mantelarea      :{0, 9}\n.
         /// </summary>
         internal static string MantelArea3D {
             get {
                 return ResourceManager.GetString("MantelArea3D", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to  0. Avsluta..
+        /// </summary>
+        internal static string Menu0 {
+            get {
+                return ResourceManager.GetString("Menu0", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to  1. Rektangel..
+        /// </summary>
+        internal static string Menu1 {
+            get {
+                return ResourceManager.GetString("Menu1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to  2. Cirkel..
+        /// </summary>
+        internal static string Menu2 {
+            get {
+                return ResourceManager.GetString("Menu2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to  3. Ellips..
+        /// </summary>
+        internal static string Menu3 {
+            get {
+                return ResourceManager.GetString("Menu3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to  4. Rätblock..
+        /// </summary>
+        internal static string Menu4 {
+            get {
+                return ResourceManager.GetString("Menu4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to  5. Cylinder..
+        /// </summary>
+        internal static string Menu5 {
+            get {
+                return ResourceManager.GetString("Menu5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to  6. Sfär..
+        /// </summary>
+        internal static string Menu6 {
+            get {
+                return ResourceManager.GetString("Menu6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to  7. Slumpa 2D-figurer..
+        /// </summary>
+        internal static string Menu7 {
+            get {
+                return ResourceManager.GetString("Menu7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to  8. Slumpa 3D-figurer..
+        /// </summary>
+        internal static string Menu8 {
+            get {
+                return ResourceManager.GetString("Menu8", resourceCulture);
             }
         }
         
