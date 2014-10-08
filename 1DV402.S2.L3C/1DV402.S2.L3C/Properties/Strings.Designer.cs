@@ -97,6 +97,15 @@ namespace _1DV402.S2.L3C.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Geometriska figurer - nivå C.
+        /// </summary>
+        internal static string Console_Title {
+            get {
+                return ResourceManager.GetString("Console_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Ange figurens längd, bredd och höjd:.
         /// </summary>
         internal static string CuboidPrompt {
@@ -309,6 +318,15 @@ namespace _1DV402.S2.L3C.Properties {
         internal static string TotalSurfaceArea3D {
             get {
                 return ResourceManager.GetString("TotalSurfaceArea3D", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Detaljer.
+        /// </summary>
+        internal static string ViewDetailsHeader {
+            get {
+                return ResourceManager.GetString("ViewDetailsHeader", resourceCulture);
             }
         }
         

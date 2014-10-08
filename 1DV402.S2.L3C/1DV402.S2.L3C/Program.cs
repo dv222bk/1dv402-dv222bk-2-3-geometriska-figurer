@@ -36,7 +36,7 @@ namespace _1DV402.S2.L3C
         }
         static void Main(string[] args)
         {
-            
+            Console.Title = Properties.Strings.Console_Title;   
         }
         private static Shape2D[] Randomize2DShapes()
         {
@@ -90,7 +90,7 @@ namespace _1DV402.S2.L3C
                 }
                 catch
                 {
-                    ShowError(Properties.Strings.DimensionsError);
+                    ViewErrorMsg(Properties.Strings.DimensionsError);
                 }
             }
         }
@@ -120,14 +120,22 @@ namespace _1DV402.S2.L3C
         }
         private static void ViewShapeDetail(Shape shape)
         {
-
+            Console.BackgroundColor = ConsoleColor.DarkRed;
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine(Properties.Strings.BoxLine);
+            Console.WriteLine(Extensions.InsertEquals(Extensions.CenterAlignString(Properties.Strings.ViewDetailsHeader, Properties.Strings.BoxLine)));
+            Console.WriteLine(Properties.Strings.BoxLine);
+            Console.ResetColor();
+            Console.WriteLine();
+            Console.WriteLine(shape.ToString());
+            Console.WriteLine();
+            Console.WriteLine(Properties.Strings.BoxLine);
+            Console.WriteLine();
         }
         private static void ViewShapes(Shape[] shapes){
 
         }
-        private static void ShowError(string message,
-            ConsoleColor backgroundColor = ConsoleColor.Red,
-            ConsoleColor foregroundColor = ConsoleColor.White)
+        private static void ViewErrorMsg(string message, ConsoleColor backgroundColor = ConsoleColor.Red, ConsoleColor foregroundColor = ConsoleColor.White)
         {
             Console.BackgroundColor = backgroundColor;
             Console.ForegroundColor = foregroundColor;

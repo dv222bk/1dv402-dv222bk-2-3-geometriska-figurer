@@ -129,6 +129,9 @@
   <data name="CirclePrompt" xml:space="preserve">
     <value>Ange figurens diameter:</value>
   </data>
+  <data name="Console_Title" xml:space="preserve">
+    <value>Geometriska figurer - nivå C</value>
+  </data>
   <data name="CuboidPrompt" xml:space="preserve">
     <value>Ange figurens längd, bredd och höjd:</value>
   </data>
@@ -200,6 +203,9 @@
   </data>
   <data name="TotalSurfaceArea3D" xml:space="preserve">
     <value>Begränsningsarea :{0, 9}\n</value>
+  </data>
+  <data name="ViewDetailsHeader" xml:space="preserve">
+    <value>Detaljer</value>
   </data>
   <data name="Volume3D" xml:space="preserve">
     <value>Volym           :{0, 9}\n</value>
