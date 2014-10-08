@@ -23,6 +23,6 @@ namespace _1DV402.S2.L3C
             }
         }
         public Ellipse(double diameter) : base(ShapeType.Circle, diameter, diameter) { }
-        public Ellipse(double hdiameter, double vdiameter) : base(ShapeType.Ellipse, vdiameter, hdiameter) { }
+        public Ellipse(double hdiameter, double vdiameter) : base(ShapeType.Ellipse, hdiameter, vdiameter) { }
     }
 }
