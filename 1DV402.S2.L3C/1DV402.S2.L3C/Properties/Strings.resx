@@ -126,6 +126,12 @@
   <data name="BoxLine" xml:space="preserve">
     <value>=====================================</value>
   </data>
+  <data name="BoxLine2D" xml:space="preserve">
+    <value>--------------------------------------</value>
+  </data>
+  <data name="BoxLine3D" xml:space="preserve">
+    <value>-------------------------------------------------------------------</value>
+  </data>
   <data name="CirclePrompt" xml:space="preserve">
     <value>Ange figurens diameter:</value>
   </data>
@@ -143,6 +149,12 @@
   </data>
   <data name="EllipsePrompt" xml:space="preserve">
     <value>Ange figurens horisontella radie och vertikala radie:</value>
+  </data>
+  <data name="Header2D" xml:space="preserve">
+    <value>Figur      Längd Bredd Omkrets    Area</value>
+  </data>
+  <data name="Header3D" xml:space="preserve">
+    <value>Figur      Längd Bredd  Höjd   Mantelarea Begräns.area        Volym</value>
   </data>
   <data name="Height3D" xml:space="preserve">
     <value>Höjd            :{0, 9}\n</value>

@@ -88,6 +88,24 @@ namespace _1DV402.S2.L3C.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to --------------------------------------.
+        /// </summary>
+        internal static string BoxLine2D {
+            get {
+                return ResourceManager.GetString("BoxLine2D", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to -------------------------------------------------------------------.
+        /// </summary>
+        internal static string BoxLine3D {
+            get {
+                return ResourceManager.GetString("BoxLine3D", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Ange figurens diameter:.
         /// </summary>
         internal static string CirclePrompt {
@@ -138,6 +156,24 @@ namespace _1DV402.S2.L3C.Properties {
         internal static string EllipsePrompt {
             get {
                 return ResourceManager.GetString("EllipsePrompt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Figur      Längd Bredd Omkrets    Area.
+        /// </summary>
+        internal static string Header2D {
+            get {
+                return ResourceManager.GetString("Header2D", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Figur      Längd Bredd  Höjd   Mantelarea Begräns.area        Volym.
+        /// </summary>
+        internal static string Header3D {
+            get {
+                return ResourceManager.GetString("Header3D", resourceCulture);
             }
         }
         
