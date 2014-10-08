@@ -58,7 +58,8 @@ namespace _1DV402.S2.L3C
             }
             return 0; // Else they are the same
         }
-        protected Shape3D(ShapeType shapeType, Shape2D baseShape, double height) : base(shapeType)
+        protected Shape3D(ShapeType shapeType, Shape2D baseShape, double height) 
+            : base(shapeType)
         {
             _baseShape = baseShape;
             Height = height;

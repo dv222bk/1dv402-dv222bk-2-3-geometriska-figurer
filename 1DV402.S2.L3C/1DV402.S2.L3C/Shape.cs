@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace _1DV402.S2.L3C
 {
+    public enum ShapeType { Rectangle, Circle, Ellipse, Cubiod, Cylinder, Sphere };
     public abstract class Shape
     {
         public bool IsShape3D
