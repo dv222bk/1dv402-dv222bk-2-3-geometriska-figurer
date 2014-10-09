@@ -124,7 +124,21 @@ namespace _1DV402.S2.L3C
                         break;
                 }
             }
-            return shapes;
+            //Sort according to Area
+            Shape2D[] sortedShapes = new Shape2D[numShapes];
+            for (int i = 0; i < numShapes; i++)
+            {
+                int count = 0;
+                for (int k = 0; k < numShapes; k++)
+                {
+                    if (shapes[i].Area > shapes[k].Area)
+                    {
+                        count++;
+                    }
+                }
+                sortedShapes[count] = shapes[i];
+            }
+            return sortedShapes;
         }
         private static Shape3D[] Randomize3DShapes()
         {
@@ -146,7 +160,21 @@ namespace _1DV402.S2.L3C
                         break;
                 }
             }
-            return shapes;
+            //Sort according to Volume
+            Shape3D[] sortedShapes = new Shape3D[numShapes];
+            for (int i = 0; i < numShapes; i++)
+            {
+                int count = 0;
+                for (int k = 0; k < numShapes; k++)
+                {
+                    if (shapes[i].Volume > shapes[k].Volume)
+                    {
+                        count++;
+                    }
+                }
+                sortedShapes[count] = shapes[i];
+            }
+            return sortedShapes;
         }
         private static double[] ReadDimensions(ShapeType shapeType)
         {
@@ -256,7 +284,7 @@ namespace _1DV402.S2.L3C
                 Console.WriteLine(Properties.Strings.BoxLine2D);
             }
             Console.ResetColor();
-            foreach (Shape shape in shapes)
+            foreach (var shape in shapes)
             {
                 Console.WriteLine(shape.ToString("R"));
             }
