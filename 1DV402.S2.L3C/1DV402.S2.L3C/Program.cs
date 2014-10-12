@@ -8,6 +8,11 @@ namespace _1DV402.S2.L3C
 {
     class Program
     {
+        /// <summary>
+        /// Creates a new shape
+        /// </summary>
+        /// <param name="shapeType">The type of shape to be created</param>
+        /// <returns>The created shape</returns>
         private static Shape CreateShape(ShapeType shapeType)
         {
             string type = Extensions.AsText(shapeType);
@@ -34,6 +39,10 @@ namespace _1DV402.S2.L3C
                     return new Ellipse(Dimensions[0]);
             }
         }
+        /// <summary>
+        /// Main engine of the program
+        /// </summary>
+        /// <param name="args">Command-line arguments</param>
         static void Main(string[] args)
         {
             Console.Title = Properties.Strings.Console_Title;
@@ -104,6 +113,10 @@ namespace _1DV402.S2.L3C
                 Console.Clear();
             }
         }
+        /// <summary>
+        /// Creates between 5 and 20 2D shapes.
+        /// </summary>
+        /// <returns>An array with 5 to 20 2D shapes</returns>
         private static Shape2D[] Randomize2DShapes()
         {
             Random random = new Random();
@@ -127,6 +140,10 @@ namespace _1DV402.S2.L3C
             Array.Sort(shapes);
             return shapes;
         }
+        /// <summary>
+        /// Creates between 5 and 20 3D shapes.
+        /// </summary>
+        /// <returns>An array with 5 to 20 3D shapes</returns>
         private static Shape3D[] Randomize3DShapes()
         {
             Random random = new Random();
@@ -150,6 +167,11 @@ namespace _1DV402.S2.L3C
             Array.Sort(shapes);
             return shapes;
         }
+        /// <summary>
+        /// Reads the dimensions of the specified shape from the user
+        /// </summary>
+        /// <param name="shapeType">The type of shape to ask the dimesions of</param>
+        /// <returns>An array with the dimensions of the shape</returns>
         private static double[] ReadDimensions(ShapeType shapeType)
         {
             switch (shapeType.ToString())
@@ -168,6 +190,12 @@ namespace _1DV402.S2.L3C
                     return ReadDoublesGreaterThanZero(Properties.Strings.CirclePrompt);
             }
         }
+        /// <summary>
+        /// Reads a specific number of double values from the user
+        /// </summary>
+        /// <param name="prompt">The prompt to show the user</param>
+        /// <param name="numberOfValues">The number of values to read</param>
+        /// <returns>An array with the doubles read from the user</returns>
         private static double[] ReadDoublesGreaterThanZero(string prompt, int numberOfValues = 1)
         {
             while(true) 
@@ -181,14 +209,14 @@ namespace _1DV402.S2.L3C
                 {
                     if (numberOfValues != values.Length)
                     {
-                        throw new Exception();
+                        throw new ArgumentException();
                     }
                     for(int i = 0; i < numberOfValues; i++)
                     {
                         returnValues[i] = double.Parse(values[i]);
                         if (returnValues[i] <= 0)
                         {
-                            throw new Exception();
+                            throw new OverflowException();
                         }
                     }
                     return returnValues;
@@ -199,6 +227,10 @@ namespace _1DV402.S2.L3C
                 }
             }
         }
+
+        /// <summary>
+        /// Shows the main menu of the program
+        /// </summary>
         private static void ViewMenu()
         {
             Console.BackgroundColor = ConsoleColor.DarkRed;
@@ -224,6 +256,11 @@ namespace _1DV402.S2.L3C
             Console.WriteLine();
             Console.ResetColor();
         }
+
+        /// <summary>
+        /// Shows the details of a single shape
+        /// </summary>
+        /// <param name="shape">The shape to show</param>
         private static void ViewShapeDetail(Shape shape)
         {
             Console.WriteLine();
@@ -240,6 +277,10 @@ namespace _1DV402.S2.L3C
             Console.WriteLine(Properties.Strings.BoxLine);
             Console.ResetColor();
         }
+        /// <summary>
+        /// Shows the details of multiple shapes
+        /// </summary>
+        /// <param name="shapes">The array of shapes to be shown</param>
         private static void ViewShapes(Shape[] shapes)
         {
             Console.Clear();
@@ -263,6 +304,12 @@ namespace _1DV402.S2.L3C
                 Console.WriteLine(shape.ToString("R"));
             }
         }
+        /// <summary>
+        /// Shows a message to the user
+        /// </summary>
+        /// <param name="message">The message to show</param>
+        /// <param name="backgroundColor">The background color for the message. Default: Red</param>
+        /// <param name="foregroundColor">The text color for the message. Default: White</param>
         private static void ViewMessage(string message, ConsoleColor backgroundColor = ConsoleColor.Red, ConsoleColor foregroundColor = ConsoleColor.White)
         {
             Console.BackgroundColor = backgroundColor;
