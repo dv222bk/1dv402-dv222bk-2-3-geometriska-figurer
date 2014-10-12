@@ -50,7 +50,7 @@ namespace _1DV402.S2.L3C
                 _width = value;
             }
         }
-        /*public int CompareTo(object obj)
+        public int CompareTo(object obj)
         {
             if (obj == null)
             {
@@ -60,16 +60,17 @@ namespace _1DV402.S2.L3C
             {
                 throw new FormatException();
             }
-            if (this.Area < obj.Area)
+            Shape2D otherShape2D = obj as Shape2D; // It is now safe to assume that obj is of the type Shape2D
+            if (this.Area < otherShape2D.Area)
             {
                 return -1;
             }
-            if (this.Area > obj.Area)
+            if (this.Area > otherShape2D.Area)
             {
                 return 1;
             }
             return 0; // Else they are the same
-        }*/
+        }
         protected Shape2D(ShapeType shapeType, double length, double width) 
             : base(shapeType)
         {

@@ -38,7 +38,7 @@ namespace _1DV402.S2.L3C
         {
             get;
         }
-        /*public int CompareTo(object obj)
+        public int CompareTo(object obj)
         {
             if (obj == null)
             {
@@ -48,16 +48,17 @@ namespace _1DV402.S2.L3C
             {
                 throw new FormatException();
             }
-            if (this.Volume < obj.Volume)
+            Shape3D otherShape3D = obj as Shape3D; // It is now safe to assume that obj is of the type Shape3D
+            if (this.Volume < otherShape3D.Volume)
             {
                 return -1;
             }
-            if (this.Volume > obj.Volume)
+            if (this.Volume > otherShape3D.Volume)
             {
                 return 1;
             }
             return 0; // Else they are the same
-        }*/
+        }
         protected Shape3D(ShapeType shapeType, Shape2D baseShape, double height) 
             : base(shapeType)
         {
