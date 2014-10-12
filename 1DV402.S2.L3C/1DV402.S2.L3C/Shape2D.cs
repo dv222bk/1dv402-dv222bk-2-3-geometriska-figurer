@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace _1DV402.S2.L3C
 {
-    public abstract class Shape2D : Shape
+    public abstract class Shape2D : Shape, IComparable
     {
         private double _length;
         private double _width;
@@ -56,20 +56,14 @@ namespace _1DV402.S2.L3C
             {
                 return 1;
             }
-            if (this.GetType() != obj.GetType())
+            Shape2D otherShape2D = obj as Shape2D;
+            if (otherShape2D != null) {
+                return this.Area.CompareTo(otherShape2D.Area);
+            }
+            else
             {
                 throw new FormatException();
             }
-            Shape2D otherShape2D = obj as Shape2D; // It is now safe to assume that obj is of the type Shape2D
-            if (this.Area < otherShape2D.Area)
-            {
-                return -1;
-            }
-            if (this.Area > otherShape2D.Area)
-            {
-                return 1;
-            }
-            return 0; // Else they are the same
         }
         protected Shape2D(ShapeType shapeType, double length, double width) 
             : base(shapeType)

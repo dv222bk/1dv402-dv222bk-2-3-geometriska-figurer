@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace _1DV402.S2.L3C
 {
-    public abstract class Shape3D : Shape
+    public abstract class Shape3D : Shape, IComparable
     {
         protected Shape2D _baseShape;
         private double _height;
@@ -44,20 +44,15 @@ namespace _1DV402.S2.L3C
             {
                 return 1;
             }
-            if (this.GetType() != obj.GetType())
+            Shape3D otherShape3D = obj as Shape3D;
+            if (otherShape3D != null)
+            {
+                return this.Volume.CompareTo(otherShape3D.Volume);
+            }
+            else
             {
                 throw new FormatException();
             }
-            Shape3D otherShape3D = obj as Shape3D; // It is now safe to assume that obj is of the type Shape3D
-            if (this.Volume < otherShape3D.Volume)
-            {
-                return -1;
-            }
-            if (this.Volume > otherShape3D.Volume)
-            {
-                return 1;
-            }
-            return 0; // Else they are the same
         }
         protected Shape3D(ShapeType shapeType, Shape2D baseShape, double height) 
             : base(shapeType)
