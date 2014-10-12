@@ -18,7 +18,7 @@ namespace _1DV402.S2.L3C
             Console.WriteLine(Properties.Strings.BoxLine);
             Console.ResetColor();
             double[] Dimensions = ReadDimensions(shapeType);
-            switch (type)
+            switch (shapeType.ToString())
             {
                 case "Cuboid":
                     return new Cuboid(Dimensions[0], Dimensions[1], Dimensions[2]);
